@@ -1,10 +1,10 @@
 
-// ✅ Customized by ChatGPT for Masum Digital BD
+<script>
 document.addEventListener("DOMContentLoaded", function () {
-  function convertCurrencyText() {
+  function currencyAndTextFix() {
     document.body.innerHTML = document.body.innerHTML
-      .replace(/Rp\.?\s?/g, "৳ ")
-      .replace(/\bIDR\b/g, "BDT")
+      .replace(/Rp\\.?\\s?/g, "৳ ")
+      .replace(/\\bIDR\\b/g, "BDT")
       .replace(/Cart Belanja/gi, "Shopping Cart")
       .replace(/Keranjang Belanja/gi, "Shopping Cart")
       .replace(/Jumlah/gi, "Quantity")
@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
       .replace(/Kode Pos/gi, "Postal Code");
   }
 
-  convertCurrencyText();
-  setInterval(convertCurrencyText, 1000);
+  currencyAndTextFix();
+  setInterval(currencyAndTextFix, 1500);
 });
+</script>
+
